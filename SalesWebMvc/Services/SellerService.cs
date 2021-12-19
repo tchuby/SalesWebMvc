@@ -1,9 +1,8 @@
 ﻿using SalesWebMvc.Data;
 using SalesWebMvc.Models;
-using System;
+using SalesWebMvc.Models.ViewModels;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace SalesWebMvc.Services
 {
@@ -21,10 +20,9 @@ namespace SalesWebMvc.Services
             return _context.Seller.ToList();
         }
 
-        public void Insert(Seller obj)
+        public void Insert(SellerFormViewModel obj)
         {
-            obj.Department = _context.Department.First();
-            _context.Add(obj);
+            _context.Seller.Add(obj.Seller);
             _context.SaveChanges();
         }
     }
