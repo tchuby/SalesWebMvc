@@ -28,8 +28,8 @@ namespace SalesWebMvc.Data
 
             Seller s1 = new Seller(1, "Bob Brown", "bobbrown@email.com", new DateTime(1992, 4, 30), 1000.00, d1);
             Seller s2 = new Seller(2, "Willian White", "willian@email.com", new DateTime(1989, 8, 15), 1000.00, d2);
-            Seller s3 = new Seller(3, "Rose Red", "bobbrown@email.com", new DateTime(1996, 2, 27), 1000.00, d3);
-            Seller s4 = new Seller(4, "George Green", "bobbrown@email.com", new DateTime(1999, 6, 17), 1000.00, d4);
+            Seller s3 = new Seller(3, "Rose Red", "rose@email.com", new DateTime(1996, 2, 27), 1000.00, d3);
+            Seller s4 = new Seller(4, "George Green", "george@email.com", new DateTime(1999, 6, 17), 1000.00, d4);
 
             SalesRecord sr1 = new SalesRecord(1, new DateTime(2021, 02, 15), 1200.00, SaleStatus.Billed, s1);
             SalesRecord sr2 = new SalesRecord(2, new DateTime(2021, 02, 15), 1150.00, SaleStatus.Billed, s2);
